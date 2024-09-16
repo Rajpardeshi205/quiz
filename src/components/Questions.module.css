@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+.quizContainer {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.589);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-family: "Imprima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.option {
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 360px 360px 360px 360px / 150px 150px 150px 150px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+}
+
+.option:hover {
+  background-color: #e0e0e0;
+}
+
+.option::before {
+  content: attr(data-label);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.correct {
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.wrong {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.timer {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submitBtn,
+.nextBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.submitBtn:disabled {
+  background-color: #6c757d;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.nextBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.nextBtn:hover {
+  background-color: #218838;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.result p {
+  font-size: 18px;
+  color: #666;
+}
+
+.correctMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d4edda;
+  color: #155724;
+  padding: 20px;
+  border: 2px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.correctMessage h2 {
+  margin: 0;
+}
