@@ -21,20 +21,19 @@
   text-align: center;
   font-size: 2rem;
   color: black;
-  max-width: 0 auto;
-  max-height: 0 auto;
-  &:hover {
-    background-color: rgba(60, 63, 60, 0.349);
-    backdrop-filter: blur(1px);
-  }
+  max-width: 600px;
+  margin: auto;
+}
+
+.rules:hover {
+  background-color: rgba(60, 63, 60, 0.349);
+  backdrop-filter: blur(1px);
 }
 
 .rules p {
   color: #ebf2fa;
-  display: flex;
   font-size: 27px;
   font-weight: 800;
-  align-items: start;
 }
 
 .start_btn {
@@ -50,12 +49,50 @@
   border: 1px solid transparent;
   cursor: pointer;
   transition: 0.4s background ease-in;
-  &:hover {
-    background-color: transparent;
-    border: 3px solid black;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-    transition: 0.3s background ease-in;
+}
+
+.start_btn:hover {
+  background-color: transparent;
+  border: 3px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s background ease-in;
+}
+
+@media (max-width: 768px) {
+  .rules {
+    padding: 20px;
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+
+  .rules p {
+    font-size: 22px; 
+  }
+
+  .start_btn {
+    padding: 8px 15px;
+    height: 50px;
+    min-width: 250px;
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .rules {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .rules p {
+    font-size: 18px;
+  }
+
+  .start_btn {
+    padding: 6px 12px;
+    height: 45px;
+    min-width: 220px;
+    font-size: 12px;
   }
 }
