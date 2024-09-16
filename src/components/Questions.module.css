@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+
 .quizContainer {
   font-family: Arial, sans-serif;
   width: 100%;
@@ -35,7 +36,7 @@ h1 {
 .option {
   padding: 15px;
   border: 2px solid #000000;
-  border-radius: 360px 360px 360px 360px / 150px 150px 150px 150px;
+  border-radius: 360px / 150px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   display: flex;
@@ -156,4 +157,66 @@ h1 {
 
 .correctMessage h2 {
   margin: 0;
+}
+
+.winner img {
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .question p {
+    font-size: 28px;
+  }
+
+  .option {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .timer {
+    font-size: 22px;
+  }
+
+  .submitBtn,
+  .nextBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .winner img {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .question p {
+    font-size: 22px;
+  }
+
+  .option {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .timer {
+    font-size: 18px;
+  }
+
+  .submitBtn,
+  .nextBtn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .winner img {
+    width: 90vw;
+    height: 60vh;
+  }
 }
