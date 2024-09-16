@@ -288,14 +288,7 @@ function Questions({ onFail }) {
       {isSubmitted && !isTimeOut && (
         <div className={Styled.correctMessage}>
           <h2>Correct Answer!</h2>
-          <p>
-            The correct answer was:{" "}
-            {
-              currentQuestion.options.find(
-                (option) => option.value === currentQuestion.correctAnswer
-              ).text
-            }
-          </p>
+
         </div>
       )}
     </div>
