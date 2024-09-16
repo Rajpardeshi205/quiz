@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Styled from "./Questions.module.css";
 
-const timerSound = new Audio("/Musics/timer.mp3");
-const correctSound = new Audio("/Musics/correct.mp3");
-const wrongSound = new Audio("/Musics/wrong.mp3");
-const newQuestionSound = new Audio("/Musics/newquestion.mp3");
-const winSound = new Audio("/Musics/7c.mp3");
+const timerSound = new Audio("/.Musics/timer.mp3");
+const correctSound = new Audio("./Musics/correct.mp3");
+const wrongSound = new Audio("./Musics/wrong.mp3");
+const newQuestionSound = new Audio("./Musics/newquestion.mp3");
+const winSound = new Audio("./Musics/7c.mp3");
 
 import winnerImage from "/Images/img_winner.png";
 
